@@ -1,0 +1,674 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: Playfair Display;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  font-family: 'Hammersmith', sans-serif;
+  max-width: 120px;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #00e0d0;
+  border: 1px solid #00e0d0;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 400ms;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #00e0d0;
+  cursor: pointer;
+}
+
+/*HEADER*/
+.tajam-header {
+  width: 100%;
+  background-image: url(img/background-top-slider.png);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.tajam-header-navigation {
+  display: flex;
+}
+
+.tajam-header-navigation-logo {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.tajam-header-navigation-logo-name {
+  color: #00e0d0;
+  font-size: 28px;
+  font-weight: 100;
+  padding-left: 5px;
+}
+
+/*BURGER MENU*/
+.tajam-burger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.tajam-burger-menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.tajam-burger-menu-icon i {
+  color: #00e0d0;
+}
+
+.tajam-burger-menu-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  background-color: #3e4447;
+  opacity: 90%;
+  z-index: 1;
+}
+
+.tajam-burger-menu-item {
+  font-size: 30px;
+}
+
+.tajam-burger-menu-item a {
+  color: #ffffff;
+}
+
+.tajam-burger-menu:hover .tajam-burger-menu-box {
+  display: block;
+}
+/*END BURGER MENU*/
+
+.tajam-header-navigation-list {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tajam-header-navigation-list-item a {
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.tajam-header-navigation-list-item a:hover {
+  color: #00e0d0;
+}
+
+.tajam-header-content-title {
+  padding: 50px 0 30px;
+}
+
+.tajam-header-content-line {
+  width: 50px;
+  height: 1px;
+  margin: 5px auto 30px;
+  background-color: #00e0d0;
+  border: none;
+}
+
+.tajam-header-content-description {
+  margin: 0 15%;
+  padding: 0 5px 50px;
+}
+
+.tajam-header-content-btn {
+  padding-bottom: 150px;
+}
+
+/*OUR STORY*/
+.tajam-our-story {
+  margin: 5% 10%;
+}
+
+.tajam-our-story-logo {
+  max-width: 150px;
+  padding-bottom: 10px;
+}
+
+.tajam-our-story-description {
+  padding: 10px 0;
+  color: #413d4b;
+}
+
+.tajam-our-story-second-description {
+  padding-bottom: 20px;
+  color: #413d4b;
+}
+
+/*WATCH OUR STORY*/
+.tajam-watch-our-story {
+  background-image: url(img/city.png);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.tajam-watch-our-story img {
+  margin: 100px 0 10px;
+}
+
+.tajam-watch-our-story-title {
+  padding-bottom: 100px;
+}
+
+/*EXPERTISE*/
+.tajam-expertise {
+  margin: 5% 10%;
+}
+
+.tajam-expertise-description {
+  color: #413d4b;
+  font-family: Playfair Display;
+  padding-bottom: 10px;
+}
+
+.tajam-expertise-line {
+  width: 50px;
+  height: 1px;
+  margin: 5px auto;
+  background-color: #413d4b;
+  border: none;
+}
+
+.tajam-expertise-items {
+  margin: 5%;
+}
+
+.tajam-expertise-item {
+  box-shadow: 1px 1px 1px 0 #c1c1c1;
+  margin-top: 10px;
+}
+
+.tajam-expertise-item img {
+  margin: 15px 0;
+}
+
+.tajam-expertise-item-description {
+  margin: 10px 5px;
+  padding-bottom: 30px;
+}
+
+/*MEET OUR AMAZING TEAM*/
+.tajam-team {
+  background-image: url(img/forest.png);
+  color: #ffffff;
+  background-size: cover;
+}
+
+.tajam-team-title {
+  padding: 20px 0 5px;
+}
+
+.tajam-team-description {
+  font-family: Playfair Display;
+  margin: 0 20px;
+}
+
+.tajam-team-line {
+  width: 50px;
+  height: 1px;
+  margin: 15px auto;
+  background-color: #ffffff;
+  border: none;
+}
+
+.tajam-team-cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 40px 0;
+}
+
+.tajam-team-card {
+  margin: 5px;
+  border: 1px solid #ffffff;
+}
+
+.tajam-team-card-title {
+  margin-top: 20px;
+}
+
+.tajam-team-card-description {
+  margin: 10px 0 20px;
+}
+
+.tajam-team-bottom-description {
+  padding-bottom: 20px;
+}
+
+.tajam-team-btn {
+  padding-bottom: 50px;
+}
+
+/*OUR WORKS*/
+.tajam-works {
+  margin-top: 20px;
+}
+
+.tajam-works-header-description {
+  padding-top: 10px;
+  color: #413d4b;
+}
+
+.tajam-works-items {
+  margin: 30px 5px;
+}
+
+/*PEOPLE SAY*/
+.tajam-people-say {
+  position: relative;
+  background-image: url(img/forest2.png);
+  background-size: cover;
+  color: #ffffff;
+  margin: 60px 0;
+}
+
+.tajam-people-say-content {
+  padding: 5% 15%;
+}
+
+.tajam-people-say-title {
+  font-size: 50px;
+}
+
+.tajam-people-say-description {
+  font-family: Playfair Display;
+  padding-bottom: 30px;
+}
+
+.tajam-people-say-occupation {
+  padding: 5px 0 30px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 79%;
+  width: auto;
+  color: white;
+  font-size: 24px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev {
+  left: 20px;
+}
+
+.tajam-people-say-list {
+  padding-bottom: 50px;
+}
+
+.tajam-people-say-list img {
+  max-width: 19%;
+}
+
+/*BOTTOM CONTAINER*/
+.tajam-bottom-container {
+  margin: 10% 10%;
+}
+
+.tajam-bottom-container-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input {
+  flex: 100%;
+  padding: 10px 0 10px 10px;
+  margin: 5px 0;
+  width: 70%;
+}
+
+.form-textarea {
+  width: 70%;
+  height: 150px;
+  margin: 5px 0 20px;
+  padding: 10px 0 0 10px;
+}
+
+.tajam-bottom-container-clients {
+  margin: 30px 0;
+}
+
+.tajam-bottom-container-clients-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tajam-bottom-container-clients-logos-col {
+  margin: 5% 10% 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.tajam-bottom-container-clients-logos-col img {
+  margin: 10px;
+  width: 90%;
+}
+
+/*FOOTER*/
+footer {
+  background-image: url(img/footer-background.png);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.tajam-footer-first-row-content-logo {
+  display: flex;
+  justify-content: center;
+  color: #00e0d0;
+  padding: 30px 0 20px;
+}
+
+.tajam-footer-first-row-logo-name {
+  font-size: 28px;
+  font-weight: 100;
+  padding-left: 5px;
+}
+
+.tajam-footer-first-row-content-description {
+  margin: 0 10% 10%;
+}
+
+.tajam-footer-first-row-adress {
+  margin: 0 10% 10%;
+}
+
+.tajam-footer-first-row-adress-info-wrap {
+  padding: 10px;
+}
+
+.tajam-footer-first-row-adress-info-wrap a {
+  color: #ffffff;
+}
+
+.footer-input {
+  height: 45px;
+  margin-right: 10px;
+  padding-left: 10px;
+  color: #9e97af;
+  border: 1px solid #9e97af;
+  background-color: transparent;
+}
+
+.footer-btn {
+  padding: 7px 12px 13px;
+  font-size: 25px;
+  background-color: #9e97af88;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.tajam-footer-first-row-subscribe-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tajam-footer-first-row-subscribe-socials-item {
+  margin: 0 7px;
+}
+
+.tajam-footer-first-row-subscribe-socials-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.tajam-footer-second-row-privacy {
+  margin: 30px 0;
+}
+
+.tajam-footer-second-row-privacy a {
+  color: #ffffff;
+}
+
+.copyright {
+  padding-bottom: 30px;
+}
+
+/*MEDIA*/
+@media (min-width: 575px) {
+  .tajam-expertise {
+    margin: 5% 5%;
+  }
+
+  .tajam-expertise-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tajam-expertise-item {
+    flex: 49%;
+    max-width: 47%;
+  }
+
+  .tajam-works-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prev, .next {
+    top: 73%;
+  }
+
+  .prev {
+    left: 40px;
+  }
+
+  .next {
+    right: 40px;
+  }
+
+  .tajam-bottom-container-clients-logos-col {
+    float: left;
+    width: 50%;
+   }
+
+  .tajam-footer-first-row-subscribe-socials-item {
+    width: 7%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tajam-burger-menu {
+    display: none;
+  }
+
+  .tajam-header-navigation {
+    justify-content: space-between;
+  }
+
+  .tajam-header-navigation-logo {
+    margin-left: 15%;
+  }
+
+  .tajam-header-navigation-nav {
+    margin-right: 15%;
+    padding-top: 30px;
+  }
+
+  .tajam-header-navigation-list {
+    display: flex;
+  }  
+
+  .tajam-our-story {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tajam-our-story-logo {
+    max-width: 300px;
+    margin: 0 8% 0 10%;
+  }
+
+  .tajam-our-story-content {
+    text-align: left;
+  }
+
+  .tajam-watch-our-story img {
+    margin: 200px 0 10px;
+  }
+  
+  .tajam-watch-our-story-title {
+    padding-bottom: 200px;
+  }
+
+  .tajam-expertise-item {
+    flex: 30%;
+    max-width: 30%;
+  }
+
+  .tajam-works-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+  }
+
+  .tajam-works-header-description {
+    padding-top: 10px;
+  }
+
+  .tajam-works-items {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .tajam-works-item {
+    flex: 16.6%;
+    max-width: 16.6%;
+  }
+
+  .tajam-works-item img {
+    width: 100%;
+  }
+
+  .tajam-people-say-content {
+    padding: 5% 25%;
+  }
+  
+  .tajam-bottom-container {
+    display: flex;
+  }
+
+  .tajam-bottom-container-form {
+    flex: 1;
+  }
+
+  .tajam-bottom-container-clients {
+    margin: 0;
+    flex: 1;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .tajam-footer-first-row {
+    display: flex;
+    margin: 0 12%;
+  }
+
+  .tajam-footer-first-row-content {
+    margin-right: 40px;
+  }
+
+  .tajam-footer-first-row-content-logo {
+    justify-content: left;
+  }
+
+  .tajam-footer-first-row-content-description {
+    margin: 0;
+  }
+
+  .tajam-footer-first-row-adress {
+    margin: 45px 30px;
+  }
+
+  .tajam-footer-first-row-adress-info-wrap i {
+    margin-left: -16px;
+  }
+
+  .tajam-footer-first-row-subscribe {
+    margin: 45px 10px;
+  }
+
+  .footer-form {
+    margin-top: 10px;
+  }
+
+  .footer-input {
+    padding: 0 30px;
+  }
+
+  .tajam-footer-first-row-subscribe-socials {
+    justify-content: left;
+  }
+
+  .tajam-footer-first-row-subscribe-socials-item {
+    margin: 0 20px 0 0;
+  }
+
+  .tajam-footer-second-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 12%;
+  }
+
+  .tajam-footer-second-row-privacy {
+    display: flex;
+    margin: 0;
+  }
+
+  .tajam-footer-second-row-privacy-item {
+    margin-right: 20px;
+  }
+}
+ 
